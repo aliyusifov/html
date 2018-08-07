@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #header,
+        #sidebar,
+        #content,
+        #footer {
+            box-sizing: border-box;
+        }
+
+        #header {
+            height: 64px;
+            background-color: blue;
+        }
+
+        #sidebar {
+            float: left;
+            width: 20%;
+            background-color: green;
+        }
+
+        #content {
+            float: left;
+            width: 80%;
+            background-color: fuchsia;
+            padding: 10px;
+        }
+
+
+        #footer {
+            height: 64px;
+            background-color: goldenrod;
+        }
+
+        .post {
+
+            background-color: lightseagreen;
+        }
+
+        .clear {
+            content: "";
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header"> header </div>
+    <div id="sidebar">sidebar</div>
+    <div id="content">
+        <h1>MySQL Table name</h1>
+        <div class="post">
+            <h2>Lower case table name</h2>
+            Mysql is usually hosted in Linux server which is case sensitive so for best practice table name should be all lower case.
+            Many PHP or other programming framework auto detect or auto generate class based on table names and most of them
+            expect lower table name.
+        </div>
+        <div class="post">
+            <h2>Table name is Singular</h2>
+            We think table holds so may things like user table holds many users in the table, so name should be plural but table is a
+            single entity as Model is only one so its odd to have plural table name. So name your table like user, invoice,
+            comment.
+
+        </div>
+        <div class="post">
+            <h2>Prefix in table name</h2>
+            I have seen many times that table name has prefix usually db name or project name. Some time it is necessary to have prefix
+            as in hosting envirnment we have many tables in one db to overcome limitation of db by hosting providers. But
+            try to aviod them. Name should be small and meaningful rather than long menaning less names. If we cant avoid
+            prefix then we can fix it by php classes.
+        </div>
+        <div class="post">
+            <h2>Prefix in table name</h2>
+            I have seen many times that table name has prefix usually db name or project name. Some time it is necessary to have prefix
+            as in hosting envirnment we have many tables in one db to overcome limitation of db by hosting providers. But
+            try to aviod them. Name should be small and meaningful rather than long menaning less names. If we cant avoid
+            prefix then we can fix it by php classes.
+        </div>
+        <div class="post">
+            <h2>Prefix in table name</h2>
+            I have seen many times that table name has prefix usually db name or project name. Some time it is necessary to have prefix
+            as in hosting envirnment we have many tables in one db to overcome limitation of db by hosting providers. But
+            try to aviod them. Name should be small and meaningful rather than long menaning less names. If we cant avoid
+            prefix then we can fix it by php classes.
+        </div>
+        <div class="post">
+            <h2>Prefix in table name</h2>
+            I have seen many times that table name has prefix usually db name or project name. Some time it is necessary to have prefix
+            as in hosting envirnment we have many tables in one db to overcome limitation of db by hosting providers. But
+            try to aviod them. Name should be small and meaningful rather than long menaning less names. If we cant avoid
+            prefix then we can fix it by php classes.
+        </div>
+        <div class="post">
+            <h2>Prefix in table name</h2>
+            I have seen many times that table name has prefix usually db name or project name. Some time it is necessary to have prefix
+            as in hosting envirnment we have many tables in one db to overcome limitation of db by hosting providers. But
+            try to aviod them. Name should be small and meaningful rather than long menaning less names. If we cant avoid
+            prefix then we can fix it by php classes.
+        </div>
+        <div class="post">
+            <h2>Prefix in table name</h2>
+            I have seen many times that table name has prefix usually db name or project name. Some time it is necessary to have prefix
+            as in hosting envirnment we have many tables in one db to overcome limitation of db by hosting providers. But
+            try to aviod them. Name should be small and meaningful rather than long menaning less names. If we cant avoid
+            prefix then we can fix it by php classes.
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="footer">footer</div>
+
+</body>
+
+</html>
