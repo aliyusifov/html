@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .group {
+            background: #afa;
+            margin: 5px;
+        }
+
+        h1 {
+            margin: 30px;
+        }
+
+        p {
+            margin: 20px;
+        }
+
+        .float {
+            background: #aaf;
+            float: left;
+            padding: 30px;
+            border: 2px solid #00f;
+            width: 25%;
+            margin: 20px;
+        }
+
+        .eof {
+            background: #faa;
+            padding: 5px;
+        }
+
+        /* The clear and collapse fix */
+
+        .group:before,
+        /* :before to uncollapse the top margin */
+
+        .group:after {
+            display: block;
+            clear: both;
+            /* clear fix */
+            content: "\a0 ";
+            /* &nbsp; - just a space doesn't uncollapse margins */
+            visibility: hidden;
+            /* make sure not to show anything */
+            height: 0;
+        }
+
+        .group {
+            zoom: 1;
+            /* solves it all for IE < 8, and doesn't hurt other browsers */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="group">
+        <h1>Lots of margin</h1>
+        <p>Note that the margin is not collapsing, and we have not set any border, padding or overflow.</p>
+    </div>
+    <div class="group">
+        <h1>Lots of margin</h1>
+        <p>text text text</p>
+    </div>
+    <div class="group">
+        <h1>Lots of margin</h1>
+        <p>text text text</p>
+    </div>
+    <div class="group">
+        <div class="float">floating</div>
+        <div class="float">floating</div>
+        <div class="float">IE7 will treat the floats here as if they had "margin-bottom: 0". This is due to IE7 float and margin bugs.</div>
+    </div>
+
+    <div class="eof">End of file</div>
+</body>
+
+</html>

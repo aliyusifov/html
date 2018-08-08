@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: gray;
+            margin-top: 20px;
+        }
+
+
+        .float {
+            float: left;
+            background-color: green;
+        }
+
+        .child {
+            margin: 20px;
+            background-color: red;
+        }
+
+        /* Contain floats *and margins*. */
+
+        .cfm::before,
+        .cfm::after {
+            content: ' ';
+            display: table;
+        }
+
+        .cfm:after {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="child">I am a block-level element.</div>
+    </div>
+    <div class="container cfm">
+        <!-- ::before -->
+        <div class="child">I am a block-level element.</div>
+        <div class="float">I am a floated element whose parent uses generated content to contain floats; however, top margins are not contained.</div>
+        <!-- ::after -->
+    </div>
+
+</body>
+
+</html>
