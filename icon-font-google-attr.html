@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            font-size: 1.5em;
+            font-family: 'helvetica', arial, sans-serif;
+            padding: 0 24px;
+        }
+
+        div {
+            margin: 12px 0;
+        }
+
+        [data-icon]::before {
+            content: attr(data-icon);
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 1em;
+            /* Preferred icon size */
+            display: inline-block;
+            vertical-align: middle;
+            width: 1em;
+            height: 1em;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+            /* Support for all WebKit browsers. */
+            -webkit-font-smoothing: antialiased;
+            /* Support for Safari and Chrome. */
+            text-rendering: optimizeLegibility;
+            /* Support for Firefox. */
+            -moz-osx-font-smoothing: grayscale;
+            /* Support for IE. */
+            -webkit-font-feature-settings: 'liga';
+            font-feature-settings: 'liga';
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul class="list">
+            <li>One</li>
+            <li data-icon="check">Two</li>
+            <li>Three</li>
+            <li>Four</li>
+        </ul>
+    </div>
+</body>
+
+</html>
