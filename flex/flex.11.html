@@ -10,13 +10,9 @@
     <style>
         .container {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-content: center;
             border: 2px dashed red;
             height: 500px;
-            padding: 0 100px;
-            flex-direction: column;
+            justify-content: flex-start;
         }
 
         .container div {
@@ -27,12 +23,14 @@
             background-color: #33a373;
         }
 
-        .before {
-            order: 100;
+        .child {
+            flex-grow: 1;
+            flex-shrink: 2;
+            flex-basis: 80px;
         }
 
-        .after {
-            order: 102;
+        .child-2 {
+            flex: 1 2 80px;
         }
     </style>
 </head>
@@ -40,15 +38,15 @@
 <body>
 
     <div class="container">
-        <div class="after">1</div>
-        <div class="after">2</div>
-        <div class="after">3</div>
-        <div class="before">4</div>
-        <div class="after">5</div>
-        <div class="before">6</div>
-        <div class="after">7</div>
-        <div class="before">8</div>
-        <div class="after">9</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div class="child">5</div>
+        <div>6</div>
+        <div>7</div>
+        <div class="child-2">8</div>
+        <div>9</div>
         <div>10</div>
     </div>
 

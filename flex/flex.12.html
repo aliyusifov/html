@@ -10,29 +10,23 @@
     <style>
         .container {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-content: center;
+
             border: 2px dashed red;
             height: 500px;
-            padding: 0 100px;
-            flex-direction: column;
+            align-items: flex-end;
+
         }
 
         .container div {
             margin: 5px;
             width: 50px;
-            height: 50px;
             color: #dfee0b;
             background-color: #33a373;
         }
 
-        .before {
-            order: 100;
-        }
-
-        .after {
-            order: 102;
+        .child {
+            align-self: flex-start;
+            background-color: #a33333 !important;
         }
     </style>
 </head>
@@ -40,15 +34,15 @@
 <body>
 
     <div class="container">
-        <div class="after">1</div>
-        <div class="after">2</div>
-        <div class="after">3</div>
-        <div class="before">4</div>
-        <div class="after">5</div>
-        <div class="before">6</div>
-        <div class="after">7</div>
-        <div class="before">8</div>
-        <div class="after">9</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div class="child">4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
         <div>10</div>
     </div>
 
