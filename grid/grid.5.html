@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            padding: 5px;
+        }
+
+        .container {
+
+            display: grid;
+            border: 2px dashed red;
+            height: 100%;
+            padding: 5px;
+
+            grid-template-columns: 40px 50px 50px 50px 40px;
+            grid-template-rows: 25% 100px 50px;
+            grid-gap: 15px 10px;
+            align-content: space-evenly;
+            position: relative;
+        }
+
+        .container div {
+            color: #dfee0b;
+            background-color: #33a373;
+            border: 1px solid magenta;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+    </div>
+
+</body>
+
+</html>
