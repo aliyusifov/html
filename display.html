@@ -2,27 +2,105 @@
 <html>
 
 <head>
+    <title>Page Title</title>
     <style>
-        span {
-            display: block;
+        * {
+            border: 2px solid red;
+        }
+
+        html {
+            border: none;
+            background-color: yellow;
+        }
+
+        body {
+            border: none;
+            background-color: lightgreen;
+        }
+
+        div#inline {
+            display: inline;
+        }
+
+        .table {
+            display: table;
+            margin: 20px 0;
+        }
+
+        .table-row {
+            display: table-row;
+        }
+
+        .table-row>div {
+            display: table-cell;
+            width: 20px;
+            height: 20px;
+
+        }
+
+
+        .contacts {
+
+            width: 320px;
+            background-color: navy;
+        }
+
+        .contacts div {
+            display: inline-block;
+            margin: 5px;
+            width: 90px;
+            height: 90px;
+            border: 2px solid white;
+            color: white;
         }
     </style>
 </head>
 
 <body>
 
+    <h1>H1 - This is a Heading</h1>
+    <p>P - This is a paragraph.</p>
+    <span>SPAN - Salam Ziya </span>
+    <div id="inline">DIV inline - Salam Ziya meseluchun</div>
 
-    <script>
-        console.log("displaying the first span element.");
-    </script>
+    <div class="table">
+        <div class="table-row">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div>
+        <div class="table-row">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div>
+        <div class="table-row">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div>
+    </div>
 
-    <span>A display property with a value of "block" results in</span>
-
-    <script style="display: block;">
-        console.log("displaying the second span element.");
-    </script>
-
-    <span>a line break between the two elements.</span>
+    <div class="contacts">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
 
 </body>
 

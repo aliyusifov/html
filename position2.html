@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <style>
+        * {
+            border: 2px solid red;
+        }
+
+        html {
+            border: none;
+            background-color: yellow;
+        }
+
+        body {
+            border: none;
+            background-color: lightgreen;
+        }
+
+
+        .contacts {
+            position: relative;
+            width: 320px;
+            height: 600px;
+            background-color: navy;
+        }
+
+        .contacts div {
+            display: inline-block;
+            margin: 5px;
+            width: 90px;
+            height: 90px;
+            border: 2px solid white;
+            color: white;
+
+        }
+
+        .fixed {
+            display: block;
+            position: fixed;
+            right: 10px;
+            top: 100px;
+            margin: 5px;
+            width: 90px;
+            height: 90px;
+            background-color: red;
+        }
+
+        .absolute {
+            display: block !important;
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            background-color: magenta;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="contacts">
+        <div class="absolute">1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+
+    <div class="fixed">F*CK</div>
+
+
+</body>
+
+</html>
